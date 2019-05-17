@@ -1,6 +1,10 @@
 # kotlin-template-starter
 Kotlin Clean Architecture Template Project. Uses dagger2 for dependency injection y'all
 
+You can change some common stuff
+
+![Terminal](art/usage.png)
+
 ### Install
 ```
 1. Install python

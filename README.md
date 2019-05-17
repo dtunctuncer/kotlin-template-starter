@@ -1,5 +1,5 @@
 # kotlin-template-starter
-Kotlin Clean Architecture Template Project. Uses dagger2 for dependency injection y'all
+Kotlin Clean Architecture Template Project. Uses dagger2 for dependency injection y'all. It is based on [nodes-kotlin-template](https://github.com/nodes-android/kotlin-template) 
 
 You can change some common stuff
 

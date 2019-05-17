@@ -1,0 +1,12 @@
+{
+  "repo_name": "kotlin-template",
+  "project_name": "{{ cookiecutter.repo_name|lower|replace('-', '') }}",
+  "min_sdk": 19,
+  "target_sdk": 28,
+  "package_name": "com.nodesagency.{{ cookiecutter.project_name|lower|replace(' ', '')|replace('-', '') }}",
+  "package_dir": "{{ cookiecutter.package_name | replace('.', '/') }}",
+  "version": "1.0.0",
+  "hockey_id_staging": "",
+  "hockey_id_production": "",
+  "_copy_without_render": [".gradle", "gradle/", "*gradlew", "*gradlew.bat"]
+}

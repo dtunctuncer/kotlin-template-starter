@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="{{ cookiecutter.package_name }}">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:node="replace" />
+
+    <application
+        android:name="{{ cookiecutter.package_name }}.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="${APP_NAME}"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- nstack app id and key from build.gradle manifest placeholder -->
+        <meta-data
+            android:name="dk.nodes.nstack.appId"
+            android:value="${appId}"
+            tools:replace="android:value" />
+        <meta-data
+            android:name="dk.nodes.nstack.apiKey"
+            android:value="${apiKey}"
+            tools:replace="android:value" />
+
+        <!-- hockey id included from build.gradle manifest placeholder -->
+        <meta-data
+            android:name="net.hockeyapp.android.appIdentifier"
+            android:value="${HOCKEYAPP_APP_ID}" />
+
+        <activity android:name="{{ cookiecutter.package_name }}.presentation.ui.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
